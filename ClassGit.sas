@@ -5,4 +5,5 @@ run;
 
 proc means data=sashelp.class;
    var age;
+   class sex;
 run;
