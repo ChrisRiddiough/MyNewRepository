@@ -7,3 +7,6 @@ proc means data=sashelp.class;
    var age;
    class sex;
 run;
+
+proc contents data=sashelp.cars;
+run;
