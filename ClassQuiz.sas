@@ -1,4 +1,4 @@
-***********************************************************;
+﻿***********************************************************;
 *  Using Numeric Functions                                *;
 ***********************************************************;
 *  Syntax                                                 *;
@@ -33,11 +33,11 @@
 *     round values to the nearest .1. Highlight the DATA  *;
 *     step and run the selected code.                     *;
 ***********************************************************;
- LIBNAME PG2 BASE "C:\workshop\pg2\Data\data" ;
+ LIBNAME students BASE "C:\workshop\pg2\Data\data" ;
 
 data quiz_analysis;
     StudentID=rand('integer',1000,9999);
-	set pg2.class_quiz;
+	set students.class_quiz;
 	drop Quiz1-Quiz5 Name;
     Quiz1st=largest(1, of Quiz1-Quiz5);
     Quiz2nd=largest(2, of Quiz1-Quiz5);
